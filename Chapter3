@@ -1,1 +1,22 @@
-
+/*Write a Java Program to check whether the numbers given by the user is divisible by both 3 and 5
+using the if statement*/
+package chapter3;
+import java.util.Scanner;
+public class Assign3_1 {
+	public static void main(String[] args)
+	{
+		int num;
+		Scanner scan= new Scanner(System.in);
+		System.out.println("Enter any number:");
+		num=scan.nextInt();
+		if(num%3==0 && num%5==0)
+		{
+			System.out.println("The Given number "+num+" is divisible by 3 and 5.");
+		}
+		if(!(num%3==0 && num%5==0))
+		{
+			System.out.println("The Given number "+num+" is not divisible by 3 and 5.");
+		}
+		scan.close();
+	}
+}
